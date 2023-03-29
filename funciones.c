@@ -80,6 +80,7 @@ int dec_case(va_list list, char *buff, int print_len)
 	free(aux);
 	return (print_len);
 }
+
 /**
  * perc_case - function for % case
  * @list: Unused
