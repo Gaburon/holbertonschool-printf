@@ -1,0 +1,77 @@
+.\" printf man page
+.\"
+.\"
+.TH _PRINTF 3 31 March 2023" "0.1" "Proyect for Holberton School"
+
+.SH NAME
+.SH ""
+
+.B _printf
+- our version of printf.
+
+.SH SYNOPSIS
+int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+.B _printf
+The function _printf() writes output to standard output. It writes the output \
+under the control of a format string that specifies how subsequent arguments \
+are converted for output.
+.SS Return Value
+Upon successful return, these functions return the number of characters \
+printed, which exclude the terminating null byte ('\0').
+.SH OPTIONS
+If it is assumed that all .c dependencies have been installed, then it is possible to use a '%' sign followed by a conversion specifier.
+You have several alternatives available.
+
+.TP
+.B -c
+.I The int argument is converted to char to represent it in characters.
+.TP
+.B -s
+.I Arguments are printed as a string.
+.B -%
+.I A % is written. No argument is converted.
+.B -d
+.I The d argument is convert to char for decimal notation.
+.B -i
+.I The i argument ic convert to char for integer notation.
+
+.SH FILES
+Before _printf can function properly, all required .c dependencies must be installed.:
+.fi
+.nf
+.I funciones.c
+.fi
+.nf
+.I get_printf_cases.c
+.fi
+.nf
+.I intigers_functions.c
+.fi
+.nf
+.I main.h
+.fi
+.I replace.c
+.nf
+.I string_functions.c
+.fi
+.SH EXAMPLE
+.nf
+int main()
+{
+    _printf("%c\n", 48);
+}
+output:
+0
+.fi
+.SH KNOWN BUGS
+.TP
+.B No known bugs
+.SH AUTHORS
+.B @Gaburón
+ - github.com/Gaburón
+.br
+.B @Julibeto84
+ - github.com/Julibeto84
+.br
