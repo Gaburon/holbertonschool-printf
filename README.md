@@ -1,6 +1,6 @@
 # _printf Function
 
-Holberton School Colombia offers a course in low-level programming and algorithms that includes a program called '_printf', which is a simulated version of the 'printf' function from the C standard library.
+Holberton School Colombia offers a course in low-level programming and algorithms that includes a program called `_printf`, which is a simulated version of the `_printf` function from the C standard library.
 
 ## Flowchart
 
