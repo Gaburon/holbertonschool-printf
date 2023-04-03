@@ -102,33 +102,3 @@ int perc_case(va_list __attribute__((unused)) list, char *buff, int print_len)
 	free(c);
 	return (print_len);
 }
-
-/**
- * bin_case - function for binary case
- * @list: intiger to convert into binary
- * @buff: buffer
- * @print_len : actual position of buff
- * Return: Last position on buff
- */
-
-int bin_case(va_list list, char *buff, int print_len)
-{
-	char *s;
-	char *aux;
-	int s_len, num;
-
-	num = va_arg(list, int);
-	aux = malloc(sizeof(char) * 35);
-	if (aux == NULL)
-		return (1);
-	aux = _itoa(num, aux, 2);
-	s_len = _strlen(aux);
-	s = malloc((sizeof(char) * s_len) + 1);
-	if (s == NULL)
-		return (1);
-	_strcpy(s, aux);
-	print_len = replace(buff, s, print_len);
-	free(s);
-	free(aux);
-	return (print_len);
-}
